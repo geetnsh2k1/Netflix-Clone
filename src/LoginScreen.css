@@ -1,0 +1,269 @@
+.loginScreen {
+    position: relative;
+    height: 100%;
+    /* background: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/netflix-background-9.jpg') center no-repeat; */
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/65a0f47d-0c7a-4632-97d9-9489cf5ac27e/c87b173a-70ba-4c9c-bc09-d599764e9bfb/IN-en-20210817-popsignuptwoweeks-perspective_alpha_website_large.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen__gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0,  0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.loginScreen__logo{
+    position: fixed;
+    left: 10px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.loginScreen__button {
+    position: fixed;
+    color: white;
+    background-color: #e50914;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    top: 20px;
+}
+
+.loginScreen__body {
+    width: 100%;
+    top:28%;
+    position:absolute;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+.form__input {
+    padding: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    width: 40%;
+    max-width: 600px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__button {
+    color: white;
+    border: none;
+    background-color: #e50914;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+hr{
+    margin: 0px;
+    padding: 5px;
+    background-color:rgb(77, 75, 75);
+}
+
+.secondBlock {
+    color: #fff;
+    height: 100%;
+    background-color: black;
+    padding: 25px 50px;
+}
+
+.secondBlock__content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.secondBlock__image {
+    object-fit: contain;
+    width: 100%;
+}
+
+.thirdBlock {
+    color: #fff;
+    height: 100%;
+    background-color: black;
+    padding-bottom: 25px;
+}
+
+.thirdBlock__content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.thirdBlock__image {
+    object-fit: contain;
+    width: 100%;
+}
+
+.secondBlock__text{
+    margin-right: 10%;
+}
+
+.thirdBlock__text {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.thirdBlock__heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.thirdBlock{
+    padding: 25px 0px;
+}
+
+.question{
+    padding: 50px;
+    background-color: black;
+}
+
+.question__heading{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.question__bank{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.lowerSection{
+    padding: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 535px) {
+    h1{
+        font-size: 2.25rem;
+        font-weight: 800;
+    }  
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+    } 
+    h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__input{
+        width: 300px;
+        margin-bottom: 2.5%;
+    }
+    .form__button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .secondBlock__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .secondBlock{
+        padding: 25px;
+        text-align: center;
+    }
+
+    .thirdBlock__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .thirdBlock{
+        padding: 25px;
+    }
+    .thirdBlock__text {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .secondBlock__text{
+        margin-right: 0%;
+    }
+    .thirdBlock__heading {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .question{
+        padding: 0px;
+    }
+    
+    .question__heading{
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 20px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+}

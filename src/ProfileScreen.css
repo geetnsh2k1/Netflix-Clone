@@ -1,0 +1,105 @@
+.profileScreen {
+    color: #fff;
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.profileScreen__body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0% 5%;
+}
+
+.profileScreen__details{
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profileScreen__avatar{
+    height: 100px;
+}
+
+.profileScreen__info {
+    display: flex;
+}
+
+.profileScreen__heading{
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.profileScreen__details > h2 {
+    background-color: gray;
+    padding: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.profileScreen__signout {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.profileScreen__subheading {
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 2px solid #282c2d;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:550px) {
+    .profileScreen{
+        padding-top: 35%;
+    }    
+    .profileScreen__heading{
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 1px solid #282c2d;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    
+    .profileScreen__details > h2 {
+        background-color: gray;
+        padding: 15px;
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    
+    .profileScreen__signout {
+        padding: 10px 20px;
+        font-size: 1rem;
+        width: 100%;
+        color: #fff;
+        background-color: #e50914;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .profileScreen__subheading {
+        font-size: 10px;
+        font-weight: 400;
+        border-bottom: 2px solid #282c2d;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+}
